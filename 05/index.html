@@ -107,6 +107,8 @@
             r.add(xcube2);
             r.render();
             // add new three.js cube
+            geometry = new THREE.BoxBufferGeometry( 20, 20, 20 );
+            material = new THREE.MeshStandardMaterial({ color: (0xffffff)});
             tcube2 = new THREE.Mesh(geometry, material);
             tcube2.position.set(50.0,50.0,50.0);
             scene.add(tcube2);
